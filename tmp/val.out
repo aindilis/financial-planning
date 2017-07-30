@@ -1,0 +1,117 @@
+Type-checking pay-on-time
+...action passes type checking.
+Checking plan: /home/andrewdo/financial-planning/tmp/plan-seq-converted.sol.pddl
+Plan to validate:
+
+Plan size: 10
+1:
+(pay-on-time socialsecurityadministration homersimpson homersimpsonsocialsecurity)
+ 
+2:
+(pay-on-time homersimpson landlord billforrent20170708)
+ 
+3:
+(pay-on-time homersimpson springfieldnuclearpower billforpower20170708)
+ 
+4:
+(pay-on-time homersimpson springfieldbarber billforhaircut20170708)
+ 
+5:
+(pay-on-time homersimpson springfieldfitness billforgym20170708)
+ 
+6:
+(pay-on-time homersimpson springfieldpetroleum billforgasoline20170708)
+ 
+7:
+(pay-on-time homersimpson springfieldcellular billforcellphone20170708)
+ 
+8:
+(pay-on-time homersimpson netflix billfornetflix20170708)
+ 
+9:
+(pay-on-time homersimpson springfieldautoinsurance billforautoinsurance20170708)
+ 
+10:
+(pay-on-time homersimpson springfieldtelecom billforlandline20170708)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (unpaid socialsecurityadministration homersimpson homersimpsonsocialsecurity)
+Adding (paid socialsecurityadministration homersimpson homersimpsonsocialsecurity)
+Updating (balance socialsecurityadministration) (10001) by 693 decrease
+Updating (balance homersimpson) (0) by 693 increase
+Updating (total-actions) (0) by 1 increase
+
+Checking next happening (time 2)
+Deleting (unpaid homersimpson landlord billforrent20170708)
+Adding (paid homersimpson landlord billforrent20170708)
+Updating (balance homersimpson) (693) by 190 decrease
+Updating (balance landlord) (10001) by 190 increase
+Updating (total-actions) (1) by 1 increase
+
+Checking next happening (time 3)
+Deleting (unpaid homersimpson springfieldnuclearpower billforpower20170708)
+Adding (paid homersimpson springfieldnuclearpower billforpower20170708)
+Updating (balance homersimpson) (503) by 60 decrease
+Updating (balance springfieldnuclearpower) (10001) by 60 increase
+Updating (total-actions) (2) by 1 increase
+
+Checking next happening (time 4)
+Deleting (unpaid homersimpson springfieldbarber billforhaircut20170708)
+Adding (paid homersimpson springfieldbarber billforhaircut20170708)
+Updating (balance homersimpson) (443) by 19 decrease
+Updating (balance springfieldbarber) (10001) by 19 increase
+Updating (total-actions) (3) by 1 increase
+
+Checking next happening (time 5)
+Deleting (unpaid homersimpson springfieldfitness billforgym20170708)
+Adding (paid homersimpson springfieldfitness billforgym20170708)
+Updating (balance homersimpson) (424) by 40 decrease
+Updating (balance springfieldfitness) (10001) by 40 increase
+Updating (total-actions) (4) by 1 increase
+
+Checking next happening (time 6)
+Deleting (unpaid homersimpson springfieldpetroleum billforgasoline20170708)
+Adding (paid homersimpson springfieldpetroleum billforgasoline20170708)
+Updating (balance homersimpson) (384) by 31 decrease
+Updating (balance springfieldpetroleum) (10001) by 31 increase
+Updating (total-actions) (5) by 1 increase
+
+Checking next happening (time 7)
+Deleting (unpaid homersimpson springfieldcellular billforcellphone20170708)
+Adding (paid homersimpson springfieldcellular billforcellphone20170708)
+Updating (balance homersimpson) (353) by 25 decrease
+Updating (balance springfieldcellular) (10001) by 25 increase
+Updating (total-actions) (6) by 1 increase
+
+Checking next happening (time 8)
+Deleting (unpaid homersimpson netflix billfornetflix20170708)
+Adding (paid homersimpson netflix billfornetflix20170708)
+Updating (balance homersimpson) (328) by 9 decrease
+Updating (balance netflix) (10001) by 9 increase
+Updating (total-actions) (7) by 1 increase
+
+Checking next happening (time 9)
+Deleting (unpaid homersimpson springfieldautoinsurance billforautoinsurance20170708)
+Adding (paid homersimpson springfieldautoinsurance billforautoinsurance20170708)
+Updating (balance homersimpson) (319) by 95 decrease
+Updating (balance springfieldautoinsurance) (10001) by 95 increase
+Updating (total-actions) (8) by 1 increase
+
+Checking next happening (time 10)
+Deleting (unpaid homersimpson springfieldtelecom billforlandline20170708)
+Adding (paid homersimpson springfieldtelecom billforlandline20170708)
+Updating (balance homersimpson) (224) by 95 decrease
+Updating (balance springfieldtelecom) (10001) by 95 increase
+Updating (total-actions) (9) by 1 increase
+Plan executed successfully - checking goal
+Plan valid
+Final value: 10 
+
+Successful plans:
+Value: 10
+ /home/andrewdo/financial-planning/tmp/plan-seq-converted.sol.pddl 10 
+

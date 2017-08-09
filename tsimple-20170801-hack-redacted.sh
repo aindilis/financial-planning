@@ -21,7 +21,9 @@ $ROOTDIR/scripts/plan-postprocessor.pl -f $FILE2 > $ROOTDIR/tmp/plan.sol.pddl 2>
 
 $ROOTDIR/scripts/convert-temporal-plan-to-sequential-plan-for-hack.pl -i $ROOTDIR/tmp/plan.sol.pddl -o $ROOTDIR/tmp/plan-seq-converted.sol.pddl -m $ROOTDIR/tmp/mapping.dat
 
-# swipl -s convert-temporal-to-sequential-for-hack.pl
+cd prolog && swipl -s convert-temporal-to-sequential-for-hack.pl
+
+cd $ROOTDIR
 
 $ROOTDIR/bin/validate -v $ROOTDIR/scripts/temporal_to_sequential/tsimpleopticclp20170801_sequential.d.pddl $ROOTDIR/scripts/temporal_to_sequential/tsimpleopticclp20170801_sequential.p.pddl $ROOTDIR/tmp/plan-seq-converted.sol.pddl > $ROOTDIR/tmp/val.out
 

@@ -119,8 +119,13 @@ and or disabilty.
 
 See: 
 
+http://frdcsa.org/~andrewdo/WebWiki/FreeLifePlanner.html
+
 http://facebook.com/frdcsa
+
 http://freelifeplanner.org
+
 http://frdcsa.org/~andrewdo/WebWiki/FreeLifePlanningCoachSoftwareUpdate.html
+
 https://github.com/aindilis/free-life-planner
 

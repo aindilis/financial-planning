@@ -1,5 +1,5 @@
 # financial-planning
-A temporal metric financial PDDL planning domain and problem w/ tools for personal planning.  Extremely simple proof of concept to be expanded upon.
+A temporal metric financial PDDL planning domain and problem w/ tools for personal planning.  Extremely simple proof of concept to be expanded upon.  Can be used as a subplanner to analyze what if scenarios, such as if you were to buy this or that.  Can also be used to arrive at a final plan, and contingency plans for if unexpected expenses arise.
 
 Here is an example which took 0.2 seconds to compute:
 

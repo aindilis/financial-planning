@@ -1,6 +1,8 @@
 # financial-planning
 A temporal metric financial PDDL (https://en.wikipedia.org/wiki/Planning_Domain_Definition_Language) planning domain and problem w/ tools for personal planning.  Extremely simple proof of concept to be expanded upon.  Can be used as a subplanner to analyze what if scenarios, such as if you were to buy this or that.  Can also be used to arrive at a final plan, and contingency plans for if unexpected expenses arise.
 
+The software takes a list of information about your bills, the date ranges of when they can be paid, when they are late, etc, and how much money you have, and projects forward your balance, using PDDL + OPTIC_CLP planner (https://nms.kcl.ac.uk/planning/software/optic.html)  Here follows some projected transactions for fictitious individuals using fake data.
+
 Here is an example which took 0.2 seconds to compute:
 
 

@@ -71,6 +71,11 @@ Here is an example which took 0.2 seconds to compute:
 
 </table>
 
+Although I no longer have the files I used to generate these examples, included are a pair of domain and problem files (both required to generate a plan) for a related example, which I link to here:
+
+https://github.com/aindilis/financial-planning/blob/master/pddl/tsimpleopticclp20170801exampleredacted.d.pddl
+https://github.com/aindilis/financial-planning/blob/master/pddl/tsimpleopticclp20170801exampleredacted.p.pddl
+
 To use:
 
 Clone the repository, then

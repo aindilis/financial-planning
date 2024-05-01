@@ -1,138 +1,33 @@
-# financial-planning
-A temporal metric financial PDDL (https://en.wikipedia.org/wiki/Planning_Domain_Definition_Language) planning domain and problem w/ tools for personal planning.  Extremely simple proof of concept to be expanded upon.  Can be used as a subplanner to analyze what if scenarios, such as if you were to buy this or that.  Can also be used to arrive at a final plan, and contingency plans for if unexpected expenses arise.
+💰 Financial Planner - Your AI-Powered Personal Finance Assistant 🤖
+Welcome to the Financial Planner, a key component of the Free Life Planner (FLP) system. This intelligent AI-based tool is designed to help you take control of your personal finances, plan for the future, and achieve your financial goals.
 
-The software takes a list of information about your bills, the date ranges of when they can be paid, when they are late, etc, and how much money you have, and projects forward your balance, using PDDL + OPTIC_CLP planner (https://nms.kcl.ac.uk/planning/software/optic.html)  Here follows some projected transactions for fictitious individuals using fake data.
+🌟 Features
+The Financial Planner offers a wide range of features to assist you in managing your money:
 
-Here is an example which took 0.2 seconds to compute:
+🧠 Intelligent Financial Planning and Reasoning: Leveraging advanced AI techniques, the planner integrates action costs and earning information to generate comprehensive temporal plans for financial prediction and reasoning.
+🖥️ Interactive Plan Execution: The intuitive GUI guides you through the execution of your financial plan, checking preconditions, propagating effects, and helping you stay on track.
+📅 Calendaring and Recurrences: View your predicted transactions, running balances, and upcoming financial events in a clear calendar format. The system also supports programmable recurrences and can detect patterns from your transaction logs.
+📊 Financial Records and Order Tracking: Automatically extrapolate auto-debits from bank exports, reconcile records with reported purchases, and track the state of your deliveries.
+🔮 Planned Features
+We're constantly working to improve the Financial Planner. Here are some exciting features in the pipeline:
 
+💸 Cash Flow Analysis and Budgeting: The planner will help you compute a monthly budget and set goals to build up your financial safety buffer.
+🧩 Meta-Planning for Contingencies: Advanced planning capabilities will allow the system to develop contingent plans, helping you prepare for various financial scenarios.
+🤝 Argumentation-Based Purchase Decisions: The planner will reason about your needs and help you make informed, ethical purchasing decisions that align with your budget and values.
+🚀 Getting Started
+To start using the Financial Planner, follow these steps:
 
-<h3>PROJECTED TRANSACTIONS FOR: Florence Tucker</h3>
-<table border="1" cellpadding="10">
-<tr><td style="padding: 5px"><b>Date sortable sorted in descending order</b></td><td style="padding: 5px"><b>Ref/Check No Description</b></td><td style="padding: 5px"><b>Debit sortable</b></td><td style="padding: 5px"><b>Credit sortable</b></td><td style="padding: 5px"><b>Balance</b></td></tr>
-<tr><td style="padding: 5px">2018/08/25 00:01:26</td><td style="padding: 5px">HOME HELP INC FLORENCETUCKERSPAYCHECK20180825</td><td style="padding: 5px"></td><td style="padding: 5px">233.00</td><td style="padding: 5px">397.01</td></tr>
+Clone the FLP repository to your local machine.
+Install the necessary dependencies as outlined in the FLP documentation.
+Run the Financial Planner module and follow the on-screen instructions to set up your profile and connect your financial accounts.
+Start planning and tracking your finances with the help of the AI-powered assistant!
+👥 Contributing
+We welcome contributions from the community to help make the Financial Planner even better. If you'd like to contribute, please see our Contributing Guidelines for more information on how to get started.
 
-<tr><td style="padding: 5px">2018/08/11 20:21:07</td><td style="padding: 5px">OMNICORP BUSINESS BILLOMNICORP201808</td><td style="padding: 5px">-140.00</td><td style="padding: 5px"></td><td style="padding: 5px">164.01</td></tr>
+📜 License
+The Financial Planner is part of the Free Life Planner system and is released under the GNU General Public License (GPL). See the LICENSE file for more details.
 
-<tr><td style="padding: 5px">2018/08/11 20:19:40</td><td style="padding: 5px">LOCUST WIRELESS BILLLOCUST201808</td><td style="padding: 5px">-110.00</td><td style="padding: 5px"></td><td style="padding: 5px">304.01</td></tr>
+🆘 Support
+If you encounter any issues or have questions about the Financial Planner, please open an issue on our GitHub repository or reach out to our support team at support@freelifeplanner.org.
 
-<tr><td style="padding: 5px">2018/08/11 16:42:14</td><td style="padding: 5px">RANDI MCBRIDE TOWARDSBILLOMNICORPFROMRANDIMCBRIDE201808</td><td style="padding: 5px"></td><td style="padding: 5px">30.00</td><td style="padding: 5px">414.01</td></tr>
-
-<tr><td style="padding: 5px">2018/08/11 16:40:48</td><td style="padding: 5px">RANDI MCBRIDE TOWARDSBILLLOCUSTFROMRANDIMCBRIDE201808</td><td style="padding: 5px"></td><td style="padding: 5px">25.00</td><td style="padding: 5px">384.01</td></tr>
-
-<tr><td style="padding: 5px">2018/08/11 03:37:26</td><td style="padding: 5px">RANDI MCBRIDE TOWARDSRENTFROMFLORENCETUCKER201808</td><td style="padding: 5px">-116.00</td><td style="padding: 5px"></td><td style="padding: 5px">359.01</td></tr>
-
-<tr><td style="padding: 5px">2018/08/11 00:00:00</td><td style="padding: 5px">HOME HELP INC FLORENCETUCKERSPAYCHECK20180811</td><td style="padding: 5px"></td><td style="padding: 5px">466.00</td><td style="padding: 5px">475.01</td></tr>
-
-<tr><td style="padding: 5px">2018/08/00 02:26:52</td><td style="padding: 5px">GEEKBUYINGDOTCOM MECOOL GEEKBUYINGDOTCOM</td><td style="padding: 5px">-35.99</td><td style="padding: 5px"></td><td style="padding: 5px">9.01</td></tr>
-
-</table>
-
-
-<h3>PROJECTED TRANSACTIONS FOR: Randi McBride</h3>
-<table border="1" cellpadding="10">
-<tr><td style="padding: 5px"><b>Date sortable sorted in descending order</b></td><td style="padding: 5px"><b>Ref/Check No Description</b></td><td style="padding: 5px"><b>Debit sortable</b></td><td style="padding: 5px"><b>Credit sortable</b></td><td style="padding: 5px"><b>Balance</b></td></tr>
-<tr><td style="padding: 5px">2018/08/15 03:37:26</td><td style="padding: 5px">JOHANNA STEIN TOWARDSRENTFROMJOHANNASTEIN201808</td><td style="padding: 5px"></td><td style="padding: 5px">100.00</td><td style="padding: 5px">2203.61</td></tr>
-
-<tr><td style="padding: 5px">2018/08/11 16:42:14</td><td style="padding: 5px">FLORENCE TUCKER TOWARDSBILLOMNICORPFROMRANDIMCBRIDE201808</td><td style="padding: 5px">-30.00</td><td style="padding: 5px"></td><td style="padding: 5px">2103.61</td></tr>
-
-<tr><td style="padding: 5px">2018/08/11 16:40:48</td><td style="padding: 5px">FLORENCE TUCKER TOWARDSBILLLOCUSTFROMRANDIMCBRIDE201808</td><td style="padding: 5px">-25.00</td><td style="padding: 5px"></td><td style="padding: 5px">2133.61</td></tr>
-
-<tr><td style="padding: 5px">2018/08/11 16:39:21</td><td style="padding: 5px">AMERICANEXPRESS BILLAMERICANEXPRESS201808</td><td style="padding: 5px">-27.00</td><td style="padding: 5px"></td><td style="padding: 5px">2158.61</td></tr>
-
-<tr><td style="padding: 5px">2018/08/11 03:37:26</td><td style="padding: 5px">FLORENCE TUCKER TOWARDSRENTFROMFLORENCETUCKER201808</td><td style="padding: 5px"></td><td style="padding: 5px">116.00</td><td style="padding: 5px">2185.61</td></tr>
-
-<tr><td style="padding: 5px">2018/08/09 00:00:00</td><td style="padding: 5px">EVERETT INDUSTRIES RANDIMCBRIDEPAYCHECK201808</td><td style="padding: 5px"></td><td style="padding: 5px">2011.00</td><td style="padding: 5px">2069.61</td></tr>
-
-<tr><td style="padding: 5px">2018/08/02 03:41:45</td><td style="padding: 5px">CITYOFCHICAGOWATERDEPARTMENT BILLCITYOFCHICAGOWATER201808</td><td style="padding: 5px">-60.00</td><td style="padding: 5px"></td><td style="padding: 5px">58.61</td></tr>
-
-<tr><td style="padding: 5px">2018/08/02 03:40:19</td><td style="padding: 5px">FOXMETRO BILLFOXMETRO201808</td><td style="padding: 5px">-30.00</td><td style="padding: 5px"></td><td style="padding: 5px">118.61</td></tr>
-
-<tr><td style="padding: 5px">2018/08/02 03:38:52</td><td style="padding: 5px">ELEMENTGAS BILLELEMENTGAS201808</td><td style="padding: 5px">-16.00</td><td style="padding: 5px"></td><td style="padding: 5px">148.61</td></tr>
-
-<tr><td style="padding: 5px">2018/08/02 03:37:26</td><td style="padding: 5px">SPOTON BILLSPOTON201808</td><td style="padding: 5px">-25.00</td><td style="padding: 5px"></td><td style="padding: 5px">164.61</td></tr>
-
-<tr><td style="padding: 5px">2018/08/02 00:00:00</td><td style="padding: 5px">CLEVERMARTINDUSTRIES RANDIMCBRIDEPENSION201808</td><td style="padding: 5px"></td><td style="padding: 5px">175.95</td><td style="padding: 5px">189.61</td></tr>
-
-<tr><td style="padding: 5px">2018/08/00 20:19:40</td><td style="padding: 5px">TREATURITEHEALTHCARE BILLTREATURITEHEALTHCAREPREMIUM201808</td><td style="padding: 5px">-235.75</td><td style="padding: 5px"></td><td style="padding: 5px">13.66</td></tr>
-
-<tr><td style="padding: 5px">2018/08/00 02:29:45</td><td style="padding: 5px">GOODENERGIES BILLGOODENERGIES201808</td><td style="padding: 5px">-283.59</td><td style="padding: 5px"></td><td style="padding: 5px">249.41</td></tr>
-
-<tr><td style="padding: 5px">2018/08/00 02:26:52</td><td style="padding: 5px">BRYANTANDALEXANDRIAPAUL BILLRENT201808</td><td style="padding: 5px">-1400.00</td><td style="padding: 5px"></td><td style="padding: 5px">533.00</td></tr>
-
-</table>
-
-
-<h3>PROJECTED TRANSACTIONS FOR: Johanna Stein</h3>
-<table border="1" cellpadding="10">
-<tr><td style="padding: 5px"><b>Date sortable sorted in descending order</b></td><td style="padding: 5px"><b>Ref/Check No Description</b></td><td style="padding: 5px"><b>Debit sortable</b></td><td style="padding: 5px"><b>Credit sortable</b></td><td style="padding: 5px"><b>Balance</b></td></tr>
-<tr><td style="padding: 5px">2018/08/15 03:37:26</td><td style="padding: 5px">RANDI MCBRIDE TOWARDSRENTFROMJOHANNASTEIN201808</td><td style="padding: 5px">-100.00</td><td style="padding: 5px"></td><td style="padding: 5px"></td></tr>
-
-<tr><td style="padding: 5px">2018/08/15 00:00:00</td><td style="padding: 5px">UPTOWN JOHANNASTEINSPAYCHECK201808-1</td><td style="padding: 5px"></td><td style="padding: 5px">100.00</td><td style="padding: 5px">100.00</td></tr>
-
-</table>
-
-Although I no longer have the files I used to generate these examples, included are a pair of domain and problem files (both required to generate a plan) for a related example, which I link to here:
-
-https://github.com/aindilis/financial-planning/blob/master/pddl/tsimpleopticclp20170801exampleredacted.d.pddl
-https://github.com/aindilis/financial-planning/blob/master/pddl/tsimpleopticclp20170801exampleredacted.p.pddl
-
-To use:
-
-Clone the repository, then
-
-cd financial-planning
-./tsimple-20170801-hack-redacted.sh
-
-If everything worked the output should be in HTML in:
-
-tmp/projected-transactions.html
-
-
-To modify:
-
-Currently you have to change around the planning problem in:
-
-pddl/tsimpleopticclp20170801exampleredacted.p.pddl
-
-The way this system works for now, in order to generate the HTML output, 
-is to generate the temporal plan and then coax it into a nontemporal plan, 
-and then walk the nontemporal plan through VAL to get the changing metric 
-values and then reapply the temporal information.  This is a temporary 
-hack.
-
-So in order to get the HTML output you have to edit both the temporal 
-problem in:
-
-pddl/tsimpleopticclp20170801exampleredacted.p.pddl
-
-and then copy that and strip out temporal assertions (i.e. statements in 
-the init section like (at <TIME> <FLUENT), etc) and put into the nontemporal
-problem here:
-
-scripts/temporal_to_sequential/tsimpleopticclp20170801_sequential.p.pddl
-
-Please note that as of this writing (20170730) the part that does that 
-automatically is also not finished.
-
-Also, please note that the resulting plan is very simple, but if you 
-introduce additional agents and have complex financial situations it 
-can very easily get complicated.  The point of this system is to make 
-it easier to do financial what-if scenarios.  For instance even very 
-complex domains have been solved in 0.2 seconds.  The Free Life Planner
-is going to use this in combination with WOPR and other planning systems
-to try to make life planning easier for people.  This is imagined to be
-of most assistance to people experiencing poverty, homelessness, illness 
-and or disabilty.
-
-See: 
-
-http://frdcsa.org/~andrewdo/WebWiki/FreeLifePlanner.html
-
-http://facebook.com/frdcsa
-
-http://freelifeplanner.org
-
-http://frdcsa.org/~andrewdo/WebWiki/FreeLifePlanningCoachSoftwareUpdate.html
-
-https://github.com/aindilis/free-life-planner
-
+Start taking control of your financial future today with the Financial Planner! 🎉

@@ -26,16 +26,13 @@ We're constantly working to improve the Financial Planner. Here are some excitin
 
 ## 🚀 Getting Started
 
-To start using the Financial Planner, follow these steps:
+For more information, please see the Financial Planner section of the FLP Reference Manual: [FLP documentation](https://github.com/aindilis/flp/blob/main/ReferenceManual.md#financial-planner)
 
-1. Clone the [FLP repository](https://github.com/aindilis/free-life-planner) to your local machine.
-2. Install the necessary dependencies as outlined in the [FLP documentation](https://github.com/aindilis/free-life-planner/blob/main/ReferenceManual.md). 
-3. Run the Financial Planner module and follow the on-screen instructions to set up your profile and connect your financial accounts.
-4. Start planning and tracking your finances with the help of the AI-powered assistant!
-
+The financial planner is still being developed, but to start using a very minimal alpha version of the FLP system, follow the instructions present in the [Panoply repository](https://github.com/aindilis/frdcsa-panoply-git-20200329/blob/master/README.md)
+ 
 ## 👥 Contributing
 
-We welcome contributions from the community to help make the Financial Planner even better. If you'd like to contribute, please see our [Contributing Guidelines](CONTRIBUTING.md) for more information on how to get started.
+We welcome contributions from the community to help make the Financial Planner even better. If you'd like to contribute, please see drop us a message at adougher9@yahoo.com for more information on how to get started.
 
 ## 📜 License
 
@@ -43,6 +40,6 @@ The Financial Planner is part of the Free Life Planner system and is released un
 
 ## 🆘 Support
 
-If you encounter any issues or have questions about the Financial Planner, please [open an issue](https://github.com/aindilis/free-life-planner/issues) on our GitHub repository or reach out to our support team at support@freelifeplanner.org.
+If you encounter any issues or have questions about the Financial Planner, please [open an issue](https://github.com/aindilis/free-life-planner/issues) on our GitHub repository.
 
-Start taking control of your financial future today with the Financial Planner! 🎉
+Get ready to take control of your financial future soon with FLP's Financial Planner! 🎉

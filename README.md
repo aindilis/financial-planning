@@ -77,7 +77,7 @@ We're constantly working to improve the Financial Planner. Here are some excitin
 
 ## 🚀 Getting Started
 
-For more information, please see the Financial Planner section of the FLP Reference Manual: [FLP documentation](https://github.com/aindilis/flp/blob/main/ReferenceManual.md#financial-planner)
+For more information, please see the Financial Planner section of the FLP Reference Manual: [FLP documentation](https://github.com/aindilis/flp/blob/main/ReferenceManual.md#financial-planner), and/or the academic paper which introduces Financial Planner: [FLP paper](https://www.academia.edu/116194435/The_Free_Life_Planner).
 
 The financial planner is still being developed, but to start using a very minimal alpha version of the FLP system, follow the instructions present in the [Panoply repository](https://github.com/aindilis/frdcsa-panoply-git-20200329/blob/master/README.md).
 

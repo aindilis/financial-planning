@@ -14,7 +14,7 @@ The Financial Planner offers a wide range of features to assist you in managing 
   - ✅ Financial reasoning integrated with general planning, adding financial reasoning to life-planning problems
 
 - 🖥️ **Interactive Plan Execution**: The intuitive GUI guides you through the execution of your financial plan, checking preconditions, propagating effects, and helping you stay on track.
-  - ✅ IEM2 for walking user through plans
+  - ✅ [IEM2](https://frdcsa.org/~andrewdo/iem2-3.mp4) for walking user through plans
   - ✅ Update world state with all effects
   - ✅ Extraction of world state deltas
   - 🚧 \[50%\] Verify preconditions
